@@ -8,8 +8,8 @@ public class StringImmutable {
        System.out.println(s1);
 
        String s3 =  s1.concat(s2);
-       System.out.println(s3);
-       s2 = s1.concat(s2);
+       System.out.println(s3); // will create new object in heap for hellohello
+       s2 = s1.concat(s2); // it will break the connection from earlier
         System.out.println(s3);
     }
 }
