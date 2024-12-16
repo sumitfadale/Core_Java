@@ -10,7 +10,7 @@ public class ArrayEvenNumers {
         int[] array = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
         List<Integer> list = Arrays.stream(array)
                 .filter(num -> num % 2 == 0)
-                .boxed().collect(Collectors.toList());
+                .boxed().collect(Collectors.toList()); // for array we need a boxed method
         System.out.println(list);
     }
 
