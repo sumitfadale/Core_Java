@@ -1,4 +1,4 @@
-package StaticMethod;
+package Static_Method;
 
 public class StaticMethodExample {
 
