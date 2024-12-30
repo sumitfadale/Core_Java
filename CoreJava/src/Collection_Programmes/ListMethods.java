@@ -35,6 +35,15 @@ public class ListMethods {
         System.out.println("-------Checking if Empty-----");
         boolean empty = list.isEmpty();
         System.out.println(empty);
+        System.out.println("------Add one list into another list------");
+        List<String> anotherList = new ArrayList<>();
+        anotherList.add("cherry");
+        anotherList.add("Papaya");
+        anotherList.add("Guvava");
+        System.out.println("Before add new list: "+list);
+        list.addAll(anotherList);
+        System.out.println("After adding new list into the old list: "+ list);
+
 
     }
 }
